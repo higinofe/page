@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="resources/img/teste.jpg" type="imagem/jpg">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Fernando Higino</title>
+    <link rel="stylesheet" href="resources/styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="#Home" class="nav-link">Home</a>
+            <a href="#About" class="nav-link">About</a>
+            <a href="#" class="services">Services</a>
+            <a href="#" class="porfolio">Porfolio</a>
+            <a href="#" class="contact">Contact</a>
+        </nav>
+        <a href="#" class="logo">Fernando <span class="logo-p">Higino</a>
+    </header>
+
+    <section class="home" id="Home"> 
+        <div class="home-content">
+            <h1>
+                < Olá Sou o Fernando />
+            </h1>
+            <h3>
+            $desenvolvedorFullStackSenior!
+            </h3>
+            <p>
+                ·10+ anos na área de TI, sendo que os últimos 3 anos com Gestão de projetos, 
+                analisando soluções para melhoria de processo, criação de ferramentas para 
+                análise de resultados, gestão de projetos usando o método tradicional de hierarquia, 
+                conhecimento basicos com o método agil utilizando os frameworks kanban e scrum, 
+                conhecimento pleno com linguagem de programação PHP engineer, java script, 
+                framework Laravel, gestão de banco de dados em MYSQL, SQL Server e MongoDB.. 
+            </p>
+        </div>
+        <div class="home_ico">
+            <a href="https://www.instagram.com/higinofer_/" target="_blank"><i class='bx bxl-instagram'></i></a>
+            <a href="https://www.linkedin.com/in/fershigino/" target="_blank"><i class='bx bxl-linkedin' ></i></a>
+            <a href="https://github.com/higinofe" target="_blank"><i class='bx bxl-github' ></i></a>
+        </div>
+    </section>
+    <section class="about" id="About">
+        <div class="about-content">
+            <h3>GESTÃO TECNOLOGIA DA INFORMAÇÃO |  UNIVERSIDADE CIDADE DE SÃO PAULO</h3>
+            <h2>07/02/2015 A 12/06/2018</h2>
+            <p>Lógica básica de programação.</p>
+            <p>Lógica básica em manipulação e análise de dados.</p>
+            <p>Linguagem básica de programação em JAVA.</p>
+            <p>Redes de computador avançado.</p>
+            <p>Arquitetura de computador.</p>
+            <p>Ferramentas de frameworks.</p>
+            <p>Análise e melhoria de processos.</p>
+            
+        </div>
+    </section>
+
+    <script>
+        // Função para mostrar a seção "Sobre" quando a página é rolada para baixo
+        window.addEventListener('scroll', function() {
+            const sobreSection = document.getElementById('About');
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (scrollTop > sobreSection.offsetTop - window.innerHeight / 2) {
+                sobreSection.style.opacity = '1';
+            }
+        });
+    </script>
+</body>
+</html>
