@@ -6,6 +6,9 @@
     box-sizing: border-box;
     font-family: 'Barlow Condensed', sans-serif;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 body{
     background-color: #081b29;
@@ -51,10 +54,14 @@ body{
     color: #00abf0;
 }
 
+section{
+    width: 100%;
+    min-height: 100vh;
+}
+
 .home {
     height: 100vh;
     background: url('img/2a.png') no-repeat;
-    
     background-position:right;
     display: flex;
     align-items: center;
@@ -142,12 +149,27 @@ body{
 
 
 .about {
+    text-align: center;
     background: url('img/port.png') no-repeat; 
     background-position:right;
     display: flex;
     align-items: center;
     padding: 0 10%;
     background-color: #2e3436;
+}
+.tab {
+    margin: 0; /* Remover margens padrão dos h3 */
+    position: absolute; /* Posição absoluta para alinhamento */
+    top: 132%; /* Centralizar verticalmente na metade da altura do pai */
+    left: 26%; /* Centralizar horizontalmente na metade da largura do pai */
+    transform: translate(-100%, -100%);
+}
+.Skills {
+    margin: 0; /* Remover margens padrão dos h3 */
+    position: absolute; /* Posição absoluta para alinhamento */
+    top: 120%; /* Centralizar verticalmente na metade da altura do pai */
+    left: 80%; /* Centralizar horizontalmente na metade da largura do pai */
+    transform: translate(-100%, -100%);
 }
 
 .about-exp{
@@ -242,5 +264,12 @@ body{
     transform: translateX(-50%) rotate(45deg);
 }
 
-
-
+.services {
+    height: 100vh;    
+    background-color: rgb(171, 217, 255);
+    background-position:right;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    
+}
