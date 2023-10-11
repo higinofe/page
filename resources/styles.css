@@ -265,11 +265,123 @@ section{
 }
 
 .services {
-    height: 100vh;    
-    background-color: rgb(171, 217, 255);
+    display: flex;
+    justify-content: space-between; 
+    position: relative;
+    background-color: rgb(32, 31, 31);
     background-position:right;
     display: flex;
     align-items: center;
     padding: 0 10%;
-    
+}
+
+.services::after{
+    content: '';
+    position: absolute;
+    top: 370px;
+    left: 40px;
+    display: block;
+    height: 4px;
+    width: 95%;
+    background-color: #00abf0;
+}
+
+.services::before{
+    content: '';
+    position: absolute;
+    top: 370px;
+    left: 0px;
+    display: block;
+    border: 2.5px dashed #00abf0;
+    width: 100%;
+}
+
+.services h2{
+    top: 80%;
+    left: 80%;
+    position: absolute; 
+    font-size: 100px;
+}
+
+.button-arrow{
+    width: 50px;
+    height: 50px;
+    background-color: #00abf0;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.button-arrow .content-services{
+    display: none;
+}
+
+.button-arrow::before{
+    content: '';
+    display: block;
+    box-sizing: border-box;
+    width: 15px;
+    height: 15px;
+    border: 20px solid transparent;
+    border-left: 25px solid white;
+    transform: translate(15px);
+}
+
+.button-arrow.-left::before{
+    transform: rotate(180deg)  translate(15px);
+}
+
+.node-card{
+    display: inline-flex;
+    flex-direction: column;;
+    align-items: center;
+    position: relative;
+}
+
+.node-card::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    box-sizing: border-box;
+    height: 0px;
+    width: 40px;
+    border: 2.5px dashed #00abf0;
+    transform: rotate(90deg) translateX(-173%);
+    bottom: 140px;
+
+}
+
+.node-card .title{
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 400;
+    color: #00abf0;
+    margin-bottom: 20px;
+}
+
+.node-card span{
+    font-size: large;
+}
+
+.node-card .logo{
+    display: flex;
+    align-items: center;
+    height: 140px;
+    border: 2px solid #00abf0;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #918484;
+    margin: 30px;
+    border-radius: 5px;
+}
+
+.move-card{
+    width: 100%;
+    overflow: hidden;
+}
+
+.move-card .elements{
+    display: flex;
+    justify-content: space-between;
+    transition: .5s;
 }
