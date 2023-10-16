@@ -15,6 +15,85 @@ body{
     color: white;
 }
 
+#fade, #modal {
+    transition: 0.5s;
+    opacity: 1;
+    pointer-events: all;
+}
+
+#fade{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 5;
+}
+
+.modal-hearder{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+}
+
+#modal{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #b4b1b1;
+    z-index: 10;
+    max-width: 90%;
+    padding: 1.2rem;
+    border-radius: 0.5rem;
+}
+
+.modal-body {
+    margin-bottom: 1rem; 
+}
+.modal-body .body-font{
+    font-size: larger;
+}
+.modal-body .body-font span{
+    font-weight: bold
+}
+
+#modal.hide,#fade.hide{
+    opacity: 0;
+    pointer-events: none;
+}
+
+#modal.hide{
+    top: 0;
+}
+
+#modal .img-modal{
+    width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	margin: center;
+	transition: 0.3s ease;
+} 
+
+#modal .img-modal:hover{
+    width: 100px;
+	height: 100px;
+	border-radius: 30%;
+	margin: center;
+	transition: 0.3s ease;
+}
+
+#modal .auto-email {
+    margin-top: 25px;
+    margin-bottom: center;
+    border-radius: 10%;
+    background-color: #00abf0;
+}
+
 .header{
     position: fixed;
     top: 0;
@@ -141,6 +220,13 @@ section{
     
 }
 
+.about h2{
+    top: 190%;
+    left: 80%;
+    position: absolute; 
+    font-size: 90px;
+}
+
 .nav-link {
     display: inline-block;
     margin: 0 15px;
@@ -156,20 +242,6 @@ section{
     align-items: center;
     padding: 0 10%;
     background-color: #2e3436;
-}
-.tab {
-    margin: 0; /* Remover margens padrão dos h3 */
-    position: absolute; /* Posição absoluta para alinhamento */
-    top: 132%; /* Centralizar verticalmente na metade da altura do pai */
-    left: 26%; /* Centralizar horizontalmente na metade da largura do pai */
-    transform: translate(-100%, -100%);
-}
-.Skills {
-    margin: 0; /* Remover margens padrão dos h3 */
-    position: absolute; /* Posição absoluta para alinhamento */
-    top: 120%; /* Centralizar verticalmente na metade da altura do pai */
-    left: 80%; /* Centralizar horizontalmente na metade da largura do pai */
-    transform: translate(-100%, -100%);
 }
 
 .about-exp{
@@ -237,7 +309,6 @@ section{
         opacity: 1;
     }    
 }
-
 
 .skill-per .tolltip{
     position: absolute;
@@ -384,4 +455,50 @@ section{
     display: flex;
     justify-content: space-between;
     transition: .5s;
+}
+
+.portforio{
+    display: flex;
+    justify-content: space-between; 
+    position: relative;
+    background-color: rgb(109, 107, 107);
+    background-position:right;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.portforio h2{
+    top: 80%;
+    left: 80%;
+    position: absolute; 
+    font-size: 90px;
+}
+
+.project-card{
+    display: inline-flex;
+    flex-direction: column;;
+    align-items: center;
+    position: relative;
+}
+
+.project-card .title{
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 400;
+    color: #00abf0;
+    margin-bottom: 20px;
+}
+
+.project-card .project{
+    display: flex;
+    align-items: center;
+    height: 140px;
+    border: 2px solid #00abf0;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #918484;
+    margin: 30px;
+    border-radius: 5px;
 }

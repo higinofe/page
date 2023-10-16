@@ -3,23 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="resources/img/teste.jpg" type="imagem/jpg">
+    <link rel="icon" href="resources/img/icone.jpg" type="imagem/jpg">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>Fernando Higino</title>
     <link rel="stylesheet" href="resources/styles.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="resources/mobile-styles.css">
+    <title>Fernando Higino</title>
 </head>
 <body>
     <header class="header">
         <nav class="navbar">
             <a href="#Home" class="nav-link">Home</a>
             <a href="#About" class="nav-link" id="abouts">About</a>
-            <a href="#services" class="nav-link">Services</a>
-            <a href="#" class="porfolio">Porfolio</a>
-            <a href="#" class="contact">Contact</a>
+            <a href="#services" class="nav-link" >Services</a>
+            <a href="#portforio" class="nav-link">Portfolio</a>
         </nav>
-        <a href="#" class="logo">Fernando <span class="logo-p">Higino</a>
+        <a href="#" class="logo" id="open-modal"> Fernando Higino </a>
     </header>
 
+    <div id="fade" class="hide"></div>
+        
+    <div id="modal" class="hide">
+        <div class="modal-hearder">
+            <h2>Fernando Higino</h2>
+            <button id="close-modal">Fechar</button>
+        </div> 
+        <div class="modal-body">
+            
+            <img class="img-modal" src="resources/img/fernando.png" alt="#">
+            <div class="body-font">
+                <p><span>Nome:</span> Fernando Higino</p>
+                <p> <span>Contato:</span> 11 988070197</p>
+                <p> <span>Stack:</span> desenvolvedor Full Stack</p>
+                <p> <a class="auto-email" href="mailto:fernando_s.higino@hotmail.com?subject=Contato via Site Portfolio">Enviar email</a></p>
+            </div>
+
+        </div>
+    </div>
+    
     <section class="home" id="Home"> 
         <div class="home-content">
             <h1>
@@ -29,12 +49,7 @@
             $desenvolvedorFullStackSenior!
             </h3>
             <p>
-                ·10+ anos na área de TI, sendo que os últimos 3 anos com Gestão de projetos, 
-                analisando soluções para melhoria de processo, criação de ferramentas para 
-                análise de resultados, gestão de projetos usando o método tradicional de hierarquia, 
-                conhecimento basicos com o método agil utilizando os frameworks kanban e scrum, 
-                conhecimento pleno com linguagem de programação PHP engineer, java script, 
-                framework Laravel, gestão de banco de dados em MYSQL, SQL Server e MongoDB.. 
+                Profissional fullstack atualmente trazendo solução ponta a ponta desde ambiente até a UX, trabalho a mais de 11 anos com Tecnologia. Os últimos 5 anos focado em Banco de dados ambientes e devops, antes disso trabalhei com suporte manutenção REDE CFTV Alarme, treinamento gestão e aderência de projeto e sistema de informação.
             </p>
         </div>
         <div class="home_ico">
@@ -45,7 +60,6 @@
     </section>
 
     <section class="about" id="About">
-        <h2 class="tab">Atuações</h2>
         <div class="about-content">
             <div class="skill-box">
                 <span class="title-skill-box">Database</span>
@@ -102,7 +116,7 @@
             <div class="move-card">
                 <div class="elements">
                     <figure class="node-card">
-                        <figcaption class="title">2013 - 2014</figcaption>
+                        <figcaption class="title">2012 - 2013</figcaption>
                             <div class="logo">
                                 <img src="resources/img/presmak.png" alt="Logo Presmak" >
                             </div>    
@@ -153,7 +167,36 @@
     
     </section>
 
+    <section class="portforio" id="portforio">
 
+        <h2>Project</h2>
+        <figure class="project-card">
+            <figcaption class="title">Consulta Cep</figcaption>
+                <div class="project">
+                    <a href="https://github.com/higinofe/searchCep" target="_blank"><img src="resources/img/frete.png" alt="#"></a>
+                </div>    
+            </figcaption>
+            <span>Consulta CEP dados IBGE</span>
+        </figure>
+
+        <figure class="project-card">
+            <figcaption class="title">Valida CPF</figcaption>
+                <div class="project">
+                    <a href="#"><img src="resources/img/cpf.png" alt="#"></a>
+                </div>    
+            </figcaption>
+            <span>Validador de CPF "Em Desenovlimento"</span>
+        </figure>
+
+        <figure class="project-card">
+            <figcaption class="title">Controle Financeiro</figcaption>
+                <div class="project">
+                    <a href="#"><img src="resources/img/Pfin.png" alt="#"></a>
+                </div>    
+            </figcaption>
+            <span>Controle pessoal de financeiro "Em Desenovlimento"</span>
+        </figure>
+    </section>
     <script type ="text/javascript" src="resources/script.js"></script>
 </body>
 </html>
