@@ -1,2 +1,9 @@
 .navbar {
 }
+.h2-title {
+    font-size: 30px;
+}
+
+.port-card .card {
+    width: 100%;
+}
