@@ -1,9 +1,104 @@
-.navbar {
+
+.logo{
+    font-size: 15px;
+    color: aqua;
+    text-decoration: none;
+    font-weight: 300;
+    transition: .5s;
 }
+
+.logo:hover{
+    color:#00abf0;
+}
+
+.navbar a {
+    font-size: 10px;
+    color: aqua;
+    text-decoration: none;
+    font-weight: 700;
+    margin-left: 1px;
+    transition: .5s;
+}
+
+.navbar a:hover{
+    color: #00abf0;
+}
+
+
+.home {
+    background: none;
+}
+
+.home-content h1 {
+    margin: 10px;
+    font-size:  25px;
+    font-weight: 700;
+}
+
+.home-content h3 {
+    
+    font-size: 20px;
+    font-weight: 700;
+    color: antiquewhite;
+}
+
+.home-content p {
+    font-size: 15px;
+}
+
 .h2-title {
     font-size: 30px;
 }
 
 .port-card .card {
     width: 100%;
+}
+
+
+.logo img {
+    max-width: 50px;
+}
+
+
+.button-arrow{
+    width: 30px;
+    height: 33px;
+}
+
+
+.services::after{
+    top: 267px;
+    left: 2px;
+}
+
+.services::before{
+    top: 267px;
+    left: 2px;
+}
+
+.node-card::before{
+    transform: rotate(90deg) translateX(-300%);
+    bottom: 78px;
+}
+
+.node-card .logo{
+    height: 73px;
+}
+
+.node-card .title {
+    margin-bottom: 34px ;
+}
+
+.button-arrow.-left::before {
+    transform: rotate(180deg) translate(11px);
+}
+
+.button-arrow.-regth::before {
+    transform: rotate(180deg) translate(11px);
+}
+
+.button-arrow::before {
+    border: 13px solid transparent;
+    border-left: 15px solid white;
+    transform: translate(10px);
 }
