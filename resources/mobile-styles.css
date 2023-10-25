@@ -46,6 +46,12 @@
     font-size: 15px;
 }
 
+
+
+.about img {
+    display: none;
+}
+
 .h2-title {
     font-size: 30px;
 }
@@ -67,18 +73,15 @@
 
 
 .services::after{
-    top: 267px;
-    left: 2px;
+    display: none;
 }
 
 .services::before{
-    top: 267px;
-    left: 2px;
+    display: none;
 }
 
 .node-card::before{
-    transform: rotate(90deg) translateX(-300%);
-    bottom: 78px;
+    display: none;
 }
 
 .node-card .logo{
